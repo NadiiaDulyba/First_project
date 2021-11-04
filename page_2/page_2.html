@@ -7,17 +7,15 @@
     <title>page_2</title>
 </head>
 <body>
-    <form name="What animal you like?" method="post" action="nadjywa2009@ukr.net">
-    </form>
-    <form action="send.php" method="post">
+    <form action="https://formspree.io/nadjywa2009@ukr.net" method="post">
         <ol>
             <li>
-                <label>Surname:<input type="text" placeholder="Surname"> </label></br>
-                <label>Name:<input type="text" placeholder="Name"> </label></br>
-                <label>Animal:<input type="text" placeholder="Animal"></label></br>
+                <label>Surname:<input type="text" placeholder="Surname" name="Surname"> </label></br>
+                <label>Name:<input type="text" placeholder="Name" name="Name"> </label></br>
+                <label>Animal:<input type="text" placeholder="Animal" name="Animal"></label></br>
             </li>
             <li>
-                <label>Write your password:<input type="password"  minlength="6"  maxlength="10"> </label>
+                <label>Write your password:<input type="password"  minlength="6"  maxlength="10" name="password"> </label>
                 <label> <input type="submit"> </label>
             </li>
             <li>
@@ -33,9 +31,9 @@
                 <label for="radio3">Fish</label></br>
             </li>
             <li>
-                <p>Choose your sex:</p>
-                <label><input type="button" value="Male"></label>
-                <label><input type="button" value="Female"></label></br>
+                <p>Choose your gender:</p>
+                <label><input type="button" value="Male" name="gender"></label>
+                <label><input type="button" value="Female" name="gender"></label></br>
             </li>
             <li>
                 <p>Choose your favorite color:</p>
@@ -60,11 +58,8 @@
                     <option>Mersedes</option>
                 </select>
              </li>
-
-
          </ol>
-    
-
+ 
         <input type="submit" value="Submit">
 
     </form>
